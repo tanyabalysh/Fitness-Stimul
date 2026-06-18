@@ -1,0 +1,423 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0px;
+    color: #382e29; 
+    font-size: 24px;
+}
+.header {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    background-color: #382e29; 
+    border-radius: 50px;
+    top: 10px;
+    padding: 20px 40px;
+    max-width: 1200px;
+    gap: 50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: max-content;
+    z-index: 1000;
+}
+.header a {
+    text-decoration: none;
+    color: white;
+}
+.header a:hover {
+    color: #4CFF1A;
+}
+.logo {
+    letter-spacing: 5px;
+    font-weight:800;
+}
+.block1 {
+    background-image: url(IMG/fonb.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 150px;
+    padding-bottom: 80px;
+    color: white;
+}
+.slogan {
+    text-align: left;
+    font-size: 48px;
+    margin-left: 150px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.advantages {
+    padding-top: 30px;
+    padding-bottom: 100px;
+    margin-left: 130px;
+}
+.button {
+    text-decoration: none;
+    width: max-content;
+    padding: 15px 60px;
+    font-size: 28px;
+    border-radius: 70px;
+    background-color: #4CFF1A;
+    color: black;
+    border: none;
+    font-weight: bold;
+    display: block;  
+    margin-left: auto;  
+    margin-right: auto;
+    cursor: pointer;
+    margin-top: -50px;
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
+}
+.button:hover {
+    color: white;
+}
+.block2, .block4 {
+    background-color: #f8f5f0;
+    padding-bottom: 100px;
+}
+.block3, .block5 {
+    background-color: lightgrey;
+    padding-bottom: 100px;
+}
+.text {
+    text-align: center;
+    margin-bottom: 50px;
+}
+h3 {
+    font-size: 48px;
+    text-align: center;
+    margin: 0;
+    padding-top: 90px;  
+    padding-bottom: 40px;
+}
+.directions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 80px;
+    column-gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.items-link {
+    text-decoration: none;
+    color: #382e29;
+    display: block;
+    transition: transform 0.3s ease;
+}
+.items-link:hover {
+    transform: scale(1.05);
+}
+.item {
+    text-align: center;
+    align-items: center;
+}
+.item p {
+    font-weight: 500;
+}
+.item img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+.subscriptions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    justify-content: center;
+    justify-items: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.subtrain, .subfit, .subswim {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e8e8e8;
+    border-radius: 24px;
+    padding: 30px 20px;
+    width: 100%;
+    max-width: 350px;
+    position: relative;
+}
+.subfit {
+    border: 4px #4CFF1A solid;
+}
+.subtrain img, .subfit img, .subswim img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    border-radius: 20px;
+}
+.trainer img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 20px;
+}
+.badge {
+    position: absolute;
+    top: 45px;    
+    right: 30px; 
+    background-color: #4CFF1A; 
+    color: black;            
+    font-size: 15px;           
+    font-weight: bold;
+    letter-spacing: 1px;       
+    padding: 6px 14px;   
+    border-radius: 20px;       
+}
+.included-sub {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.sub-price {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #382e29; 
+}
+.included {
+    text-align: left;
+    max-width: 280px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 18px;
+    flex-grow: 1;
+}
+.included li {
+    margin-bottom: 10px; 
+}
+.included p {
+    margin: 8px 0;
+}
+.btn {
+    display: block;
+    font-size: 18px;
+    background-color: #4CFF1A;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 50px;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-weight: bold;
+    text-decoration: none;
+    color: #382e29; 
+    transition: color 0.3s ease;
+}
+.btn:hover {
+    text-decoration: none;
+    color: white;
+}
+.best-train {
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 50px;
+}
+.trainers {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.trainer {
+    text-align: center;
+}
+.trainer > p {
+    font-size: 18px;
+    font-weight: 700;   
+    margin-bottom: 5px; 
+}
+.trainer img {
+    border-radius: 50px;
+}
+.description {
+    color: #656565;     
+    font-size: 16px;    
+}
+.block5 {
+    text-align: center;
+}
+.bid {
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.record {
+    background-color: #fbf1e0;
+    border-radius: 30px;
+    max-width: 720px;
+    text-align: center;
+    padding: 50px 50px;
+    margin: 0 auto;
+}
+.record-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 4px;
+    margin-top: 0;
+}
+.record-subtitle {
+    font-size: 18px;
+    color: #6b6b6b;
+    margin-bottom: 50px;
+}
+.field-group {
+    margin-bottom: 20px;
+}
+.field-group label {
+    display: block;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.field-group input {
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ddd4c4;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+.service-block p{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.service-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 16px;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+.service-card input[type="checkbox"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+.service-price {
+    font-weight: 600;
+    font-size: 13px;
+    background-color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: 0;
+}
+h4 {
+    text-align: left;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.agreement-block {
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+.agreement-block a {
+    color: #382e29;
+}
+.btn-bit {
+    display: block;
+    font-size: 20px;
+    background-color: #4CFF1A;
+    border: none;
+    border-radius: 50px;
+    padding: 16px 40px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    width: 100%;
+    transition: color 0.3s ease;
+}
+.btn-bit:hover {
+    color: white;
+}
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.85);
+    width: 100%;
+    align-items: flex-start;
+    text-align: center;
+    margin: 0;
+}
+.contacts, .location, .social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.phone span, .address span {
+    font-size: 16px;
+    text-align: left;
+}
+.phone img {
+    width: 25px;
+    height: 25px;
+}
+.address {
+    width: 100%;
+}
+.map-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    gap: 15px;                
+    text-decoration: none;     
+    color: #382e29;             
+    transition: color 0.3s ease; 
+}
+.map-link:hover {
+    color: #4CFF1A;            
+}
+.address img {
+    width: 25px;
+    height: 25px;
+}
+.icons img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    transition: filter 0.3s ease;
+}
+.icons a {
+    text-decoration: none;
+}
+.social-link:hover img {
+    filter: invert(72%) sepia(85%) saturate(1495%) hue-rotate(53deg) brightness(108%) contrast(105%);
+}
+.footer-text {
+    font-size: 20px;
+    margin: 10px 0;
+}
+.footer-bottom {
+    font-size: 16px;
+    text-align: center;
+}
+.footer-bottom a {
+    color: #382e29;
+}
